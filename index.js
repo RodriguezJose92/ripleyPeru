@@ -548,3 +548,4 @@ const initExperience = () =>{
     }
 
 };
+initExperience ();
