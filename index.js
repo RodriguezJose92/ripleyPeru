@@ -1030,14 +1030,14 @@ class MudiExperiencePDP {
     /** Create Styles ✔️ */
     createStyles() {
         /** Verify element HTML */
-        // if (document.head.querySelector("#stylesMudiGeneral")) {
-        //     return;
-        // }
+        if (document.head.querySelector("#stylesMudiGeneral")) {
+            return;
+        }
 
         const link = document.createElement("LINK");
         link.setAttribute("rel", "stylesheet");
         link.id = "stylesMudiGeneral";
-        link.href = `http://localhost:5500/index.css`; /* custom this path */
+        link.href = `https://cdn.jsdelivr.net/gh/RodriguezJose92/ripleyPeru@latest/index.css`; /* custom this path */
 
         document.head.appendChild(link);
     }
